@@ -25,7 +25,7 @@ class QAllianceQSendgridExtension extends Extension
         $container->setParameter('no_reply_email', $config['no_reply_email']);
         $container->setParameter('sendgrid_api_key', $config['sendgrid_api_key']);
 
-        $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
-        $loader->load('services.xml');
+        $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader->load('services.yml');
     }
 }

@@ -16,9 +16,8 @@ composer require q-alliance/qsendgridbundle
 ```
 
 ## Setup
----
 
-### Update ```AppKernel.php```
+#### Update ```AppKernel.php```
 ```
 $bundles = [
 	...
@@ -26,7 +25,7 @@ $bundles = [
 ];
 ```
 
-### Update ```config.yml```
+#### Update ```config.yml```
 
 ```
 # QSendgrid Configuration

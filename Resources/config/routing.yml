@@ -1,0 +1,3 @@
+q_alliance_q_sendgrid_homepage:
+    path:     /
+    defaults: { _controller: QAllianceQSendgridBundle:Default:index }

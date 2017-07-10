@@ -1,0 +1,5 @@
+services:
+    qalliance.qsendgrid:
+       class: QAlliance\QSendgridBundle\Services\QSendgridService
+       arguments: [ "%no_reply_email%", "%sendgrid_api_key%" ]
+

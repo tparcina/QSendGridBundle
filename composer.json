@@ -1,0 +1,21 @@
+{
+    "name" : "q-alliance/qsendgridbundle",
+    "description" : "qsendgrid bundle implementation",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "vicko",
+        "email" : "vicko@q-alliance.com"
+    }],
+    "keywords" : [
+        "qsendgrid bundle"
+    ],
+    "require" : {
+        "q-alliance/qsendgrid": "^1.0"
+    },
+    "autoload" : {
+        "psr-0" : {
+            "QAlliance\\QSendgridBundle" : ""
+        }
+    },
+    "target-dir" : "QAlliance/QSendgridBundle"
+}

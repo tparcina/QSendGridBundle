@@ -1,6 +1,6 @@
 {
     "name" : "q-alliance/qsendgridbundle",
-    "description" : "qsendgrid bundle implementation",
+    "description" : "Symfony bundle implementation of QSendgrid mailer service",
     "type" : "symfony-bundle",
     "authors" : [{
         "name" : "vicko",

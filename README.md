@@ -38,12 +38,11 @@ q_alliance_q_sendgrid:
 
 ## Basic usage
 
-#### Get QSendgrid mailer service from controller:
+#### Get QSendgrid mailer service from controller and send simple email:
 
 ```php
 $qs = $this->get('qalliance.qsendgrid');
 
-// Send email to given address with subject and content - returns bool
 $result = $qs->send('to@example.com', 'My Subject', '<h1>This is a QSendgrid test email.</h1>');
 ```
 
@@ -58,10 +57,17 @@ $attachmentUrls = [
 
 $qs = $this->get('qalliance.qsendgrid');
 
-
-// Send email to given address with subject, content and attachments - returns bool
 $result = $qs->send('to@example.com', 'My Subject', '<h1>This is a QSendgrid test email with attachments.</h1>', $attachmentUrls);
 ```
+
+#### Add fromName as last parameter (optional):
+
+```php
+$qs = $this->get('qalliance.qsendgrid');
+
+$result = $qs->send('to@example.com', 'My Subject', '<h1>This is a QSendgrid test email.</h1>', null, 'From Name');
+```
+
 
 ## Authors
 

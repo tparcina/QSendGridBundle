@@ -37,4 +37,20 @@ class QSendgridService
 	{
 		return $this->qsendgrid->send($to, $subject, $content, $attachments, $fromName);
 	}
+
+    /**
+     * Send email with QSendgridService, html and text plain content required
+     *
+     * @param string $to Destination email address
+     * @param string $subject Email subject
+     * @param string $content HTML content
+     * @param $plainTextContent Plain text content
+     * @param array $attachments Optional array of attachments (paths to files)
+     * @param string $fromName
+     * @return bool                Result
+     */
+    public function sendWithTextPlain($to, $subject, $content, $plainTextContent, $attachments = null, $fromName = 'No Reply')
+    {
+        return $this->qsendgrid->sendWithTextPlain($to, $subject, $content, $plainTextContent, $attachments, $fromName);
+    }
 }

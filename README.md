@@ -68,7 +68,14 @@ $qs = $this->get('qalliance.qsendgrid');
 $result = $qs->send('to@example.com', 'My Subject', '<h1>This is a QSendgrid test email.</h1>', null, 'From Name');
 ```
 
+#### Sending email with html and plain text content:
+
+```php 
+$qs = $this->get('qalliance.qsendgrid');
+
+$result = $qs->sendWithTextPlain('to@example.com', 'My Subject', '<h1>This is a QSendgrid test email with plain text.</h1>', 'This is a QSendgrid test email with plain text', null, 'From Name');
+```
 
 ## Authors
 
-* *Vicko Franic* - *Initial work* - [Github](https://github.com/vickofranic)
+* *Vicko Franic* - [Github](https://github.com/vickofranic)

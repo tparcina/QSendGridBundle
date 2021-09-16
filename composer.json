@@ -1,5 +1,5 @@
 {
-    "name" : "q-alliance/qsendgridbundle",
+    "name" : "tparcina/qsendgridbundle",
     "description" : "Symfony bundle implementation of QSendgrid mailer service",
     "type" : "symfony-bundle",
     "authors" : [{
@@ -10,7 +10,7 @@
         "qsendgrid bundle"
     ],
     "require" : {
-        "q-alliance/qsendgrid": "^1.0"
+        "tparcina/qsendgrid": "^1.0"
     },
     "autoload" : {
         "psr-0" : {
